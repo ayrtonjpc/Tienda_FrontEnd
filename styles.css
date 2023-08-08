@@ -1,6 +1,6 @@
 :root {
   --primario: #9c27b0;
-  --primarioOscuro: #89119d;
+  --primarioOscuro: #6c0c7d;
   --secundario: #ffce00;
   --secundarioOscuro: rgb(233, 287, 2);
   --blanco: #fff;
@@ -250,7 +250,9 @@ width: 100%;
 }
 
 .formulario__campo{
-
+border: var(--primarioOscuro);
+border-width: 1rem;
+border-style: solid;
 }
 
 .formulario__submit{
