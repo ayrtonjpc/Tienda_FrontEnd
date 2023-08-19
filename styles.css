@@ -38,7 +38,7 @@ a {
 }
 
 img {
- width: 100%;
+  width: 100%;
 }
 
 .contenedor {
@@ -205,67 +205,76 @@ h3 {
   }
 }
 
-.bloques{
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 2rem;
+.bloques {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 @media (min-width: 768px) {
-  .bloques{
+  .bloques {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-.bloque{
-text-align: center;
+.bloque {
+  text-align: center;
 }
 
-.bloque__titulo{
-
-margin: 0;
+.bloque__titulo {
+  margin: 0;
 }
 
-.bloque__imagen{
-
-width: 100%;
+.bloque__imagen {
+  width: 100%;
 }
 
-.contenedor, .comprar{
+.contenedor,
+.comprar {
   padding: 4rem 0;
 }
 
 /** pagina de producto **/
 
 @media (min-width: 768px) {
-  .camisa{
+  .camisa {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
   }
 }
 
-.formulario{
-
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
-.formulario__campo{
-border: var(--primarioOscuro);
+.formulario__campo {
+  /* border: var(--primarioOscuro);
 border-width: 1rem;
-border-style: solid;
+border-style: solid; */
+
+  border: 1rem solid var(--primarioOscuro);
+  background-color: transparent;
+  color: var(--blanco);
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  appearance: none;
 }
 
-.formulario__submit{
+.formulario__submit {
   background-color: var(--secundario);
   border: none;
   font-size: 2rem;
   font-family: var(--fuentePrincipal);
   padding: 2rem;
-transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
+  grid-column: 1/3;
 }
 
-.formulario__submit:hover{
+.formulario__submit:hover {
   cursor: pointer;
   background-color: var(--secundarioOscuro);
-
 }
